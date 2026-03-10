@@ -1,3 +1,4 @@
+import { Link } from "@inertiajs/react"
 
 function Body({children}) {
     return (
@@ -22,10 +23,10 @@ function Body({children}) {
 
                                 {/* <!-- Desktop Menu --> */}
                                 <div className="hidden md:flex space-x-8">
-                                    <a className="text-slate-900 font-medium hover:text-primary-600 transition-colors" href="index.html">Home</a>
-                                    <a className="text-slate-500 font-medium hover:text-primary-600 transition-colors" href="shop.html">Shop</a>
-                                    <a className="text-slate-500 font-medium hover:text-primary-600 transition-colors" href="#">New Arrivals</a>
-                                    <a className="text-slate-500 font-medium hover:text-primary-600 transition-colors" href="#">About</a>
+                                    <Link className="text-slate-900 font-medium hover:text-primary-600 transition-colors" href="/">Home</Link>
+                                    <Link className="text-slate-500 font-medium hover:text-primary-600 transition-colors" href="/shop">Shop</Link>
+                                    <Link className="text-slate-500 font-medium hover:text-primary-600 transition-colors" href="/comming-soon">New Arrivals</Link>
+                                    <Link className="text-slate-500 font-medium hover:text-primary-600 transition-colors" href="/about">About</Link>
                                 </div>
 
                                 {/* <!-- Icons --> */}
@@ -37,12 +38,12 @@ function Body({children}) {
                                             <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
                                         </svg>
                                     </button>
-                                    <a className="text-slate-400 hover:text-slate-900 transition-colors relative" href="cart.html">
+                                    <Link className="text-slate-400 hover:text-slate-900 transition-colors relative" href="/cart">
                                         <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
                                         </svg>
                                         <span className="absolute -top-1 -right-1 bg-primary-600 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <button id="mobile-menu-toggle" className="md:hidden p-2 text-current focus:outline-none" aria-label="Toggle menu" type="button">
                                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,10 +55,10 @@ function Body({children}) {
 
                         {/* <!-- Mobile Menu --> */}
                         <div id="mobile-menu" className="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-lg p-4 flex flex-col gap-4 z-50">
-                            <a className="text-slate-900 font-medium hover:text-primary-600 transition-colors block w-full" href="index.html">Home</a>
-                            <a className="text-slate-500 font-medium hover:text-primary-600 transition-colors block w-full" href="shop.html">Shop</a>
-                            <a className="text-slate-500 font-medium hover:text-primary-600 transition-colors block w-full" href="#">New Arrivals</a>
-                            <a className="text-slate-500 font-medium hover:text-primary-600 transition-colors block w-full" href="#">About</a>
+                            <Link className="text-slate-900 font-medium hover:text-primary-600 transition-colors block w-full" href="/">Home</Link>
+                            <Link className="text-slate-500 font-medium hover:text-primary-600 transition-colors block w-full" href="/shop">Shop</Link>
+                            <Link className="text-slate-500 font-medium hover:text-primary-600 transition-colors block w-full" href="/comming-soon">New Arrivals</Link>
+                            <Link className="text-slate-500 font-medium hover:text-primary-600 transition-colors block w-full" href="/about">About</Link>
                         </div>
                     </nav>
                 </header>
@@ -69,9 +70,9 @@ function Body({children}) {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                             <div className="col-span-1 md:col-span-1">
-                                <a className="font-heading font-bold text-2xl text-white tracking-tight mb-4 block" href="#">Lumina
+                                <Link className="font-heading font-bold text-2xl text-white tracking-tight mb-4 block" href="/">Lumina
                                     <span className="text-primary-500">.</span>
-                                </a>
+                                </Link>
                                 <p className="text-sm text-slate-400">
                                     Your destination for modern lifestyle essentials. Quality, style, and sustainability in every product.
                                 </p>
